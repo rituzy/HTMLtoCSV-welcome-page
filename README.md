@@ -3,10 +3,10 @@
 Welcome page for HTMLtoCSV Chrome Extension.
 
 ## Structure
--  - Main page
--  - Styles
--  - JavaScript
--  - Images and screenshots
+- index.html - Main page
+- styles.css - Styles  
+- script.js - JavaScript
+- images/ - Images and screenshots
 
 ## Deployment
 Static HTML page, can be hosted on any web server.
