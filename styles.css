@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #ffffff;
+    min-height: 100vh;
 }
 
 .container {
@@ -29,6 +30,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.logo-link {
+    text-decoration: none;
 }
 
 .logo {
@@ -54,25 +59,94 @@ body {
     color: #4CAF50;
 }
 
-/* Hero Section */
+/* Hero Section - Home */
+.home-hero {
+    text-align: center;
+    padding: 120px 0 100px;
+}
+
+.home-hero .hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #0d1b2a;
+}
+
+.home-hero .hero-subtitle {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.install-btn {
+    display: inline-block;
+    padding: 16px 40px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.install-btn:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76,175,80,0.3);
+}
+
+/* Hero Section - Welcome */
 .hero {
     padding: 60px 0 40px;
     text-align: center;
 }
 
 .hero-title {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 700;
     margin-bottom: 20px;
     color: #0d1b2a;
+    line-height: 1.3;
 }
 
-.hero-subtitle {
+/* Hero Section - Contact */
+.contact-hero {
+    text-align: left;
+    padding: 80px 0;
+}
+
+.contact-hero .hero-title {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.contact-hero .hero-subtitle {
     font-size: 18px;
     color: #666;
-    max-width: 600px;
-    margin: 0 auto;
-    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    color: #333;
+}
+
+.contact-email {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-email:hover {
+    text-decoration: underline;
 }
 
 /* Guide Section */
@@ -135,8 +209,16 @@ body {
 
 /* Responsive Design */
 @media (max-width: 640px) {
+    .home-hero {
+        padding: 80px 0 60px;
+    }
+    
+    .home-hero .hero-title {
+        font-size: 36px;
+    }
+    
     .hero-title {
-        font-size: 32px;
+        font-size: 28px;
     }
     
     .step {
@@ -146,5 +228,9 @@ body {
     
     .step-number {
         margin: 0 auto;
+    }
+    
+    .contact-hero {
+        text-align: center;
     }
 }
