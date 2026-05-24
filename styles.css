@@ -34,10 +34,18 @@ body {
 
 .logo-link {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
     color: #333;
 }
@@ -45,6 +53,7 @@ body {
 .nav {
     display: flex;
     gap: 30px;
+    align-items: center;
 }
 
 .nav a {
@@ -52,7 +61,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .nav a:hover {
@@ -62,23 +71,24 @@ body {
 /* Hero Section - Home */
 .home-hero {
     text-align: center;
-    padding: 120px 0 100px;
+    padding: 80px 0 100px;
 }
 
 .home-hero .hero-title {
-    font-size: 48px;
+    font-size: 64px;
     font-weight: 700;
     margin-bottom: 20px;
     color: #0d1b2a;
 }
 
 .home-hero .hero-subtitle {
-    font-size: 20px;
+    font-size: 24px;
     color: #666;
     margin-bottom: 40px;
-    max-width: 600px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: 500;
 }
 
 .install-btn {
